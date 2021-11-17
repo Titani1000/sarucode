@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+body {
+  background: #F0F0F0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #222;
+  overflow: hidden;
+  padding: 0 4%;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* =========================================== */
+/* ヘッダー並びにフッターの中心から線を伸ばす */
+/* =========================================== */
+.line ul li a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 80%;
+	height: 2px;
+	background: #222;
+	transition: all .3s;
+	transform: scale(0,1);
+	transform-origin: center left;
+}
+.line ul li a:hover::after {
+  transform: scale(1, 1);
+}

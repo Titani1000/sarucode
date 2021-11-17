@@ -1,0 +1,27 @@
+技術力を裏付けるようにポップな感じにする
+基本色はメインはSnowWhite
+ベースカラーは黒色
+アクセントカラーは背景に色々溶け込むよう配置
+
+参考サイト
+http://u-d-l.jp/
+https://www.oniguili.jp/
+https://ja.webcreatormana.com/
+https://redick-portfolio.com/
+
+参考サイトは基本白と黒での構成+アクセントカラーとして
+柔らかめのSnowWhiteなどの優しめの色を背景色にうまく混ぜ合わせている
+
+今の自分が使えるスキル
+HTMl&CSS SCSS
+レスポンシヴ対応
+jQuery
+WordPress
+デザイン
+AdobeXD
+SEO対策
+
+具体的なページ構成として
+TOPページ+下層ページに
+ABOUT部分WORKS部分の２ページを追加
+計3ページ

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* =============== */
+/* トップ部分全体 */
+/* =============== */
+#top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+#top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5%;
+  border-top: 30vw solid #e3e3e3;
+  border-left: 50vw solid transparent;
+  z-index: -99;
+}
+#top::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  border-top: 30vw solid transparent;
+  border-left: 50vw solid #e3e3e3;
+  z-index: -99;
+}
+
+.top_ttl {
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+}
+.top_ttl h1 {
+  font-size: 80px;
+}
+.top_ttl h1 span {
+  display: block;
+  font-size: 20px;
+  color: #222;
+  text-align: right;
+}
+/* トップタイトル上部 */
+.top_ttl .sub_ttl {
+  font-size: 20px;
+}
+/* トップタイトルレスポンシヴ対応 */
+@media screen and (max-width: 780px) {
+  .top_ttl h1 {
+    font-size: 50px;
+  }
+  .top_ttl h1 span {
+    font-size: 16px;
+  }
+  .top_ttl .sub_ttl {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top_ttl h1 {
+    font-size: 30px;
+  }
+  .top_ttl h1 span {
+    font-size: 10px;
+  }
+  .top_ttl .sub_ttl {
+    font-size: 10px;
+  }
+}
+
+/* ================= */
+/* 作品一覧部分 */
+/* ================= */
+#work {
+  margin: 8em 0 0 0;
+}
+.work_item {
+  margin: 3.5em 0;
+}
+.work_item ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.work_item ul li {
+  width: 26%;
+  height: auto;
+  text-align: center;
+  margin: 1em auto;
+}
+.work_item ul li img {
+  width: 100%;
+}
+
+/* 画像ホバー時にズームイン */
+.zoomin img {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+.zoomin a:hover img {
+  transform: scale(1.2);
+}
+.mask {
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+  border-radius: 20px;
+  border: 3px solid #222;
+}
+
+/* 架空サイトの説明部分CSS */
+
+
+/* 作品一覧レスポンシヴ */
+@media screen and (max-width: 480px) {
+  .work_item ul li {
+    width: 80%;
+  }
+}
+/* ================= */
+/* 技術一覧部分 */
+/* ================= */
+#skills {
+  margin: 6em 0;
+  width: 100%;
+  height: 100%;
+  /* padding-top: calc(10vw + 10px); */
+}
+/* スキル全体に逆三角形の背景装飾 */
+#skills::before {
+  content: '';
+  /* width: 100%;
+  height: 50%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 50vw solid #222;
+  border-right: 90vw solid transparent;
+  z-index: -99;
+}
+#skills::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  border-top: 30vw solid #fff;
+  border-bottom: 10vw solid transparent;
+  border-right: 20vw solid #222;
+  border-left: 50vw solid transparent;
+
+  z-index: -10;
+}
+
+.skill_item {
+  margin: 5em 0 0 0;
+}
+.skill_item ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1080px;
+  margin: 0 auto;
+}
+.skill_item ul li {
+  width: 30%;
+  height: 500px;
+  max-height: 500px;
+  padding: 10px;
+  margin: 2em auto;
+  border: 1px solid #ccc;
+  text-align: center;
+  background: #fff;
+}
+
+.skill_item ul li .skill_img {
+  width: 80%;
+  height: 50%;
+  margin: 2em auto;
+}
+.skill_item ul li .skill_img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* スキルカード内容位置調整CSS */
+.skill_item ul li h3 {
+  font-size: 20px;
+}
+.skill_item ul li p {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* ===================================== */
+/* カード要素二枚目htmlとcssの画像部分 */
+/* ===================================== */
+.htmlcss_img {
+  display: flex;
+  width: 80%;
+  height: 50%;
+  justify-content: center;
+  margin: 2em auto;
+}
+.htmlcss_img img {
+  width: 60%;
+}
+
+/* ========================= */
+/* 技術一覧レスポンシヴ */
+/* ========================= */
+@media screen and (max-width: 1080px) {
+  .skill_item ul {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .skill_item ul {
+    width: 100%;
+  }
+  .skill_item ul li {
+    width: 48%;
+  }
+  .skill_item ul li p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skill_item ul li {
+    width: 100%;
+  }
+}
+
+/* ================================ */
+/* アバウト要素自分のない経歴を書く */
+/* ================================ */
+.about_all {
+  /* display: flex; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5em auto;
+}
+.about_text {
+  text-align: center;
+}
+
+/* 画像部分 */
+.about_img {
+  width: 10%;
+  margin: 0 auto;
+}
+.about_img img {
+  width: 100%;
+}

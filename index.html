@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>SaruCode</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="keywords" content="1,2,3">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta property="og:title" content="サイトタイトル"> 
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://sarucode.site">
+ <meta property="og:image" content="img/logo.png">
+ <meta property="og:description" content="ディスクリプションを入力"> 
+ <meta property="og:site_name" content="コンテンツタイトル">
+ <!-- サイトアイコン(favicon.ico) -->
+ <link rel="icon" href="favicon.ico">
+ <link rel="apple-touch-icon" sizes="" href="">
+ <!-- 共通CSSファイル -->
+ <link rel="stylesheet" type="text/css" href="./base/reset.css">
+ <link rel="stylesheet" type="text/css" href="./base/common.css">
+ <!-- タブ別CSSファイル -->
+ <link rel="stylesheet" type="text/css" href="./main/index.css">
+ <!-- SCSS読み込み変換用CSSファイル -->
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+ <!-- SCSSファイル -->
+ <link rel="stylesheet" type="text/scss" href="./scss/style.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_main.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_dec&color.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_mixin.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_button.scss">
+
+ <!-- 外部リンクCDN -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+ </head>
+ <body>
+ <!----- header----->
+ <header id="header">
+   <div class="header_logo"><img src="./image/common/Logo.png" alt="ヘッダーロゴ左"></div>
+    <nav id="list" class="line hMenu">
+      <ul class="page_link">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+ <!-- ハンバーガーメニュー要素 -->
+  <div class="menubtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+ </header>
+ <!----- /header ----->
+
+
+
+ <!----- main ----->
+ <main>
+
+ <!-- ファーストビュー -->
+  <section id="top">
+    <div class="top_ttl">
+      <span class="sub_ttl">日々前進するために、描く</span>
+      <h1>Draw Code<span>My Portfoliosite</span></h1>
+    </div>
+    <a href="#">Scroll</a>
+  </section>
+
+<!-- 自己紹介部分 -->
+  <section id="about">
+    <h2 class="heading">About/<span>人物</span></h2>
+    <div class="about_all">
+      <div class="about_img">
+        <img src="./image/common/saru_about.svg" alt="人物サルの画像 鳥獣戯画">
+      </div>
+      <div class="about_text">
+        <h3>足立 海吏</h3>
+        <p>Web制作を勉強して半年ほど経ちます<br>
+          HTML/CSS/jQuery/JavaScript/SCSS/WordPress化の方を勉強致しました。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 今までに作った作品一覧 -->
+  <section id="works">
+   <h2 class="heading">WorKs/<span>作品</span></h2>
+   <div class="work_item">
+     <ul>
+       <li class="zoomin"><a href="#">
+         <span class="mask"><img src="./image/sammple/ReMarKサンプル.png" alt="架空のIT企業サイト"></span>
+         <div class="works_text">
+           <h3>架空のIT企業コーポレートサイト</h3>
+          </div>
+        </a></li>
+       <li class="zoomin"><a href="#">
+         <span class="mask"><img src="./image/sammple/竈門祭りサンプル.png" alt="架空のお祭り宣伝サイト"></span>
+         <h3>架空のお祭り宣伝サイト</h3>
+        </a></li>
+     </ul>
+   </div>
+  </section>
+
+  <!-- 自身が使える技術一覧 -->
+  <section id="skills">
+    <h2 class="heading wColor">Skills/<span>技術</span></h2>
+
+    <div class="skill_item">
+      <ul>
+        <li>
+          <h3>デザイン作成</h3>
+          <div class="skill_img"><img src="./image/skills/WEBデザイン（ブラウザ）のアイコン 2.svg" alt=""></div>
+          <p>AdobeXDを使った
+            Webサイトのデザインが可能です
+            最近のトレンド傾向などを用いて
+            一からのワイヤーフレーム
+            デザインカンプの作成が可能です。</p>
+        </li>
+
+        <li>
+          <h3>HTML＆CSS</h3>
+          <div class="htmlcss_img">
+            <img src="./image/skills/html-5.svg" alt="htmlのSVG画像">
+            <img src="./image/skills/css-3.svg" alt="cssのSVG画像">
+          </div>
+          <p>HTMLとCSSを使って一からのWebサイト構築が可能です。
+            また、SCSSも使えますので
+            コーディングの効率化や修正等を
+            楽にすることが可能です。</p>
+        </li>
+
+        <li>
+          <h3>jQuery</h3>
+          <div class="skill_img"><img src="./image/skills/jquery.svg" alt="jQueryのSVG画像"></div>
+          <p>jQueryやJavascriptを使った
+            サイトに動きのあるアニメーション
+            スライドショーやスムーススクロール等のアニメーション
+            をつけることが可能です。</p>
+        </li>
+
+        <li>
+          <h3>レスポンシヴ対応</h3>
+          <div class="skill_img"><img src="./image/skills/PCでのログイン画面のアイコン素材 3.svg" alt="レスポンシヴ対応のSVG画像"></div>
+          <p>レスポンシヴ対応を意識した
+            スマホやタブレット等に対応した
+            コーディングが可能です。</p>
+        </li>
+
+        <li>
+          <h3>SEO対策</h3>
+          <div class="skill_img"><img src="./image/skills/SEO対策のアイコン素材 4.svg" alt="SEO対策のSVG画像"></div>
+          <p>内部SEOの基礎を習得しており、
+            適切なキーワード選定が可能です。</p>
+        </li>
+
+        <li>
+          <h3>WordPress対応</h3>
+          <div class="skill_img"><img src="./image/skills/wordpress-icon.svg" alt="WordpressのSVG画像"></div>
+          <p>WordPress既存テーマの
+            基本的な操作やカスタマイズ。
+            HPのWordPress化が可能です。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+
+  </section>
+ </main>
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ <footer id="footer">
+   <!-- <div class="footer_list line">
+     <ul class="page_link">
+       <li><a href="#top">Top</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#works">Works</a></li>
+       <li><a href="#skills">Skills</a></li>
+     </ul>
+   </div> -->
+  <small>©SaruCode Portfoliosite</small>
+  <div class="fsup"><a href="#">Scroll</a></div>
+ </footer>
+ <!----- /footer ----->
+
+  <!-- 外部CDN読み込み用 jQ -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!-- Javascript用ファイル -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
