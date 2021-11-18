@@ -128,30 +128,6 @@
   height: 100%;
   /* padding-top: calc(10vw + 10px); */
 }
-/* スキル全体に逆三角形の背景装飾 */
-#skills::before {
-  content: '';
-  /* width: 100%;
-  height: 50%; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: 50vw solid #222;
-  border-right: 90vw solid transparent;
-  z-index: -99;
-}
-#skills::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 5%;
-  border-top: 30vw solid #fff;
-  border-bottom: 10vw solid transparent;
-  border-right: 20vw solid #222;
-  border-left: 50vw solid transparent;
-
-  z-index: -10;
-}
 
 .skill_item {
   margin: 5em 0 0 0;
